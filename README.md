@@ -1,4 +1,4 @@
-## TankSim
+## TankSim for turtlewow
 
 ### What can I use this sim for?
 The main purpose of this sim is to analyze pull variance using different threat metrics such standard deviation, average threat, 1st and 5th percentile worst threat. You can also set threat goals (say, 3000 threat at 3 seconds into the fight) and sim how often the goal is failed/passed.
@@ -26,3 +26,5 @@ At this time, the simulation follows a set pre-defined priority system that's be
 ### Contact
 If you have questions or suggestions you can find me on Discord, Quadzet#4824.
 You can also create issues on this Github page.
+
+Full credit to Quadzet for making this
