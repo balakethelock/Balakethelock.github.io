@@ -118,6 +118,25 @@ let races = {
     skill: 5,
     skilltype: ["Axes"]
 },
+    "Goblin": {
+    strength: 123,
+    stamina: 112,
+    agility: 77,
+
+    hit: 0,
+    crit: 0,
+    attackpower: 160,
+
+    armor: 0,
+    parry: 0,
+    dodge: 0,
+    defense: 0,
+    block: 0,
+    blockvalue: 0,
+
+    skill: 5,
+    skilltype: ["Maces", "Daggers"]
+},
     "Tauren": {
     strength: 125,
     stamina: 112,
