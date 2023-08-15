@@ -19,7 +19,7 @@ class ThunderfuryMH extends Proc {
     handleEvent(source, target, event, events, config) {
         if (event.type == "damage" && event.ability != "OH Swing" && config.landedHits.includes(event.hit)) {
             let rng = Math.random()
-            if (rng < 0.19*0.83) { // 0.83 derives from 17% chance to resist 
+            if (rng < 0.25*0.83) { // 0.83 derives from 17% chance to resist 
                 rng = Math.random(); // Two-roll
                 let critMod = rng < source.stats.spellcrit/100 ? 1.5 : 1;
                 let damage = this.damage*source.damageMod*critMod; // don't count enrage, use default 0.9 only
@@ -43,7 +43,7 @@ class ThunderfuryOH extends Proc {
     handleEvent(source, target, event, events, config) {
         if (event.type == "damage" && event.ability == "OH Swing" && config.landedHits.includes(event.hit)) {
             let rng = Math.random()
-            if (rng < 0.19*0.83) { // 0.83 derives from 17% chance to resist 
+            if (rng < 0.25*0.83) { // 0.83 derives from 17% chance to resist 
                 rng = Math.random(); // Two-roll
                 let critMod = rng < source.stats.spellcrit/100 ? 1.5 : 1;
                 let damage = this.damage*source.damageMod*critMod; // don't count enrage, use default 0.9 only
